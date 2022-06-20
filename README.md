@@ -1,5 +1,91 @@
 # Image-Processing-Lab
-**Resize the original image**
+
+
+1. Develop a program to display grayscale image using read and write operation.
+pip install opencv-python
+import cv2
+img=cv2.imread('flower5.jpg',0)
+cv2.imshow('image',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+OUTPUT
+
+
+
+2. Develop a program to display the image using matplotlib.
+import matplotlib.image as mping
+import matplotlib.pyplot as plt
+img=mping.imread('plant4.jpg')
+plt.imshow(img)
+OUTPUT
+
+
+
+3. develop a program to perform linear transformation. Rotation
+import cv2
+from PIL import Image
+img=Image.open("plant4.jpg")
+img=img.rotate(180)
+img.show()
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+OUTPUT
+
+
+
+4. Develop a program to convert colour string to RGB color values.
+from PIL import ImageColor
+img1=ImageColor.getrgb("Yellow")
+print(img1)
+img2=ImageColor.getrgb("red")
+print(img2)
+OUTPUT
+(255, 255, 0)
+(255, 0, 0)
+
+5. Write a program to create Image using programs.
+from PIL import Image
+img=Image.new('RGB',(200,400),(255,255,0))
+img.show()
+OUTPUT
+
+
+6. Develop a program to visualize the image using various color space.
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+img=cv2.imread('butterfly3.jpg')
+plt.imshow(img)
+plt.show()
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+plt.imshow(img)
+plt.show()
+
+img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+plt.imshow(img)
+plt.show()
+OUTPUT
+
+7. Write a program to display the image attributes.
+from PIL import Image
+image=Image.open('plant4.jpg')
+print("FileName: ",image.filename)
+print("Format: ",image.format)
+print("Mode: ",image.mode)
+print("Size: ",image.size)
+print("Width: ",image.width)
+print("Height: ",image.height)
+image.close();
+OUTPUT
+FileName: plant4.jpg
+Format: JPEG
+Mode: RGB
+Size: (480, 720)
+Width: 480
+Height: 720
+
+
+**8.Resize the original image**
 import cv2
 img=cv2.imread('flower.jpg')
 print('original image length width',img.shape)
