@@ -7,7 +7,9 @@ img=cv2.imread('rose1.jpg',0)<br>
 cv2.imshow('image',img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
+
 OUTPUT
+
 ![image](https://user-images.githubusercontent.com/97940851/174562233-db89101a-0ca1-462f-b481-ab615dd9b6d4.png)
 
 
@@ -19,7 +21,9 @@ import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
 img=mping.imread('leaf1.jpg')<br>
 plt.imshow(img)<br>
+
 OUTPUT
+
 ![image](https://user-images.githubusercontent.com/97940851/174561806-3d48847f-425c-48bb-9cca-4767735b8df4.png)
 
 
@@ -32,7 +36,9 @@ img=img.rotate(180)<br><br>
 img.show()<br><br>
 cv2.waitKey(0)<br><br>
 cv2.destroyAllWindows()<br><br>
+
 OUTPUT
+
 ![image](https://user-images.githubusercontent.com/97940851/174562744-81b05612-94af-4eac-81d7-8f1c808e14e2.png)
 
 
@@ -43,7 +49,9 @@ img1=ImageColor.getrgb("Yellow")<br>
 print(img1)<br>
 img2=ImageColor.getrgb("red")<br>
 print(img2)<br>
+
 OUTPUT
+
 (255, 255, 0)
 (255, 0, 0)
 
@@ -51,8 +59,11 @@ OUTPUT
 from PIL import Image<br>
 img=Image.new('RGB',(200,400),(255,255,0))<br>
 img.show()<br>
+
 OUTPUT
-<br>
+
+![image](https://user-images.githubusercontent.com/97940851/174564403-b6637935-61ef-4122-9835-0bf8cf68bfbe.png)
+
 
 **6. Develop a program to visualize the image using various color space.**
 import cv2<br>
@@ -70,6 +81,7 @@ plt.show()<br>
 
 
 OUTPUT
+
 ![image](https://user-images.githubusercontent.com/97940851/174563392-3f0f2f6d-8a8f-4b78-a01e-72453d803ad7.png)
 
 ![image](https://user-images.githubusercontent.com/97940851/174563435-7e22e7f1-3ca9-4113-b06e-f5a2ac80b5d8.png)
@@ -87,7 +99,9 @@ print("Size: ",image.size)<br>
 print("Width: ",image.width)<br>
 print("Height: ",image.height)<br>
 image.close();<br>
+
 OUTPUT
+
 FileName: plant4.jpg<br>
 Format: JPEG
 Mode: RGB
@@ -109,7 +123,8 @@ cv2.imshow('resized image',imgresize)<br>
 print('Resized image length width',imgresize.shape)<br>
 cv2.waitKey(0)<br>
 
-**OUTPUT**
+OUTPUT
+
 original image length width (181, 278, 3)
 Resized image length width (160, 150, 3)
 -1<br>
@@ -136,7 +151,8 @@ cv2.imshow("Binary",bw_img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-**OUTPUT**
+OUTPUT
+
 ![image](https://user-images.githubusercontent.com/97940851/174060419-cdbae202-bd2b-48c5-a8d0-5807d12fa105.png)
 
 ![image](https://user-images.githubusercontent.com/97940851/174060490-6b7d0a40-504b-4575-8783-5d753a802136.png)
