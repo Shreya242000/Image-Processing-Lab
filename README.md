@@ -2,34 +2,38 @@
 
 
 1. Develop a program to display grayscale image using read and write operation.
-pip install opencv-python<br>
-import cv2<br>
-img=cv2.imread('flower5.jpg',0)<br>
-cv2.imshow('image',img)<br>
-cv2.waitKey(0)<br>
-cv2.destroyAllWindows()<br>
-OUTPUT<br>
+import cv2
+img=cv2.imread('rose1.jpg',0)
+cv2.imshow('image',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+OUTPUT
+![image](https://user-images.githubusercontent.com/97940851/174562233-db89101a-0ca1-462f-b481-ab615dd9b6d4.png)
+
+
 
 
 
 2. Develop a program to display the image using matplotlib.
-import matplotlib.image as mping<br>
-import matplotlib.pyplot as plt<br>
-img=mping.imread('plant4.jpg')<br>
-plt.imshow(img)<br>
+import matplotlib.image as mping
+import matplotlib.pyplot as plt
+img=mping.imread('leaf1.jpg')
+plt.imshow(img)
 OUTPUT
+![image](https://user-images.githubusercontent.com/97940851/174561806-3d48847f-425c-48bb-9cca-4767735b8df4.png)
 
 
 
 3. develop a program to perform linear transformation. Rotation
-import cv2<br>
-from PIL import Image<br>
-img=Image.open("plant4.jpg")<br>
-img=img.rotate(180)<br>
-img.show()<br>
-cv2.waitKey(0)<br>
-cv2.destroyAllWindows()<br>
+import cv2
+from PIL import Image
+img=Image.open('plant4.jpg')
+img=img.rotate(180)
+img.show()
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 OUTPUT
+![image](https://user-images.githubusercontent.com/97940851/174562744-81b05612-94af-4eac-81d7-8f1c808e14e2.png)
 
 
 
@@ -51,20 +55,27 @@ OUTPUT
 <br>
 
 6. Develop a program to visualize the image using various color space.
-import cv2<br>
-import matplotlib.pyplot as plt<br>
-import numpy as np<br>
-img=cv2.imread('butterfly3.jpg')<br>
-plt.imshow(img)<br>
-plt.show()<br>
-img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)<br>
-plt.imshow(img)<br>
-plt.show()<br>
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+img=cv2.imread('rose1.jpg')
+plt.imshow(img)
+plt.show()
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+plt.imshow(img)
+plt.show()
+img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+plt.imshow(img)
+plt.show()
 
-img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
-plt.imshow(img)<br>
-plt.show()<br><br>
+
 OUTPUT
+![image](https://user-images.githubusercontent.com/97940851/174563392-3f0f2f6d-8a8f-4b78-a01e-72453d803ad7.png)
+
+![image](https://user-images.githubusercontent.com/97940851/174563435-7e22e7f1-3ca9-4113-b06e-f5a2ac80b5d8.png)
+
+![image](https://user-images.githubusercontent.com/97940851/174563481-46011097-6156-4bdd-af27-fc23ff5a4c0f.png)
+
 
 7. Write a program to display the image attributes.
 from PIL import Image<br>
