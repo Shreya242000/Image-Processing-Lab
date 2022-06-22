@@ -160,3 +160,17 @@ OUTPUT
 ![image](https://user-images.githubusercontent.com/97940851/174060627-e4f005d9-04d5-4b41-9c88-52ddbf7d0138.png)
 
 
+**url**
+from skimage import io<br>
+import matplotlib.pyplot as plt<br>
+url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3VyCF39_x0MhTZema9w9qnFPw6SgAAnY0lA&usqp=CAU'<br>
+image=io.imread(url)<br>
+plt.imshow(image)<br>
+plt.show()<br>
+
+**OUTPUT**
+
+![image](https://user-images.githubusercontent.com/97940851/175006849-d1fe66de-25aa-4979-bc09-6ec770b11e3f.png)
+
+
+
