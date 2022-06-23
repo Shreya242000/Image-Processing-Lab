@@ -274,6 +274,43 @@ cv2.imwrite('output.jpg',fimg4)
 True
 
 
+****
+import cv2
+img=cv2.imread("dog.jpg")
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)
+cv2.imshow("GRAY image",gray)
+cv2.imshow("HSV image",hsv)
+cv2.imshow("LAB image",lab)
+cv2.imshow("HLS image",hls)
+cv2.imshow("YUV image",yuv)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+**OUTPUT**
+
+![image](https://user-images.githubusercontent.com/97940851/175275459-1038aabc-f2e2-48d4-832e-4818794576d7.png)
+
+![image](https://user-images.githubusercontent.com/97940851/175275565-e98518fb-4310-4ae7-9121-312f769a1789.png)
+
+![image](https://user-images.githubusercontent.com/97940851/175275777-13baace2-7b44-40e2-8fca-601994e1dd4f.png)
+
+![image](https://user-images.githubusercontent.com/97940851/175275902-3fdd3a34-d608-4f77-85c8-f3164238cb19.png)
+
+![image](https://user-images.githubusercontent.com/97940851/175275976-0d96f5e4-beb2-4d92-b5b6-714205902ea2.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
