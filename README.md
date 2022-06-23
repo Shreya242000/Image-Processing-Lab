@@ -304,6 +304,26 @@ cv2.destroyAllWindows()
 
 
 
+**Program to create an image using**
+import cv2 as c
+import numpy as np
+from PIL import Image
+array=np.zeros([100,200,3],dtype=np.uint8)
+array[:,:100]=[255,130,0]
+array[:,100:]=[0,0,255]
+img=Image.fromarray(array)
+img.save('IMAGES.jpg')
+img.show()
+c.waitKey(0)
+
+**output**
+
+![image](https://user-images.githubusercontent.com/97940851/175283707-b07903e6-eeae-4838-85e7-bd7f7177f98c.png)
+
+
+
+
+
 
 
 
