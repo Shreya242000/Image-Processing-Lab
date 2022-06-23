@@ -230,36 +230,36 @@ plt.show()<br>
 
 **Write a program to perform airthmetic operation on image**
 
-import cv2
-import matplotlib.image as mping
-import matplotlib.pyplot as plt
+import cv2<br>
+import matplotlib.image as mping<br>
+import matplotlib.pyplot as plt<br>
 
-#Read image file
-img1=cv2.imread('image1.jpg')
-img2=cv2.imread('image2.jpg')
+#Read image file<br>
+img1=cv2.imread('image1.jpg')<br>
+img2=cv2.imread('image2.jpg')<br>
 
-#numpy addition on image
-fimg1 = img1 + img2
-plt.imshow(fimg1)
-plt.show()
+#numpy addition on image<br>
+fimg1 = img1 + img2<br>
+plt.imshow(fimg1)<br>
+plt.show()<br>
 
-#saving the output image
-cv2.imwrite('output.jpg',fimg1)
-fimg2 = img1 - img2
-plt.imshow(fimg2)
-plt.show()
-#saving
-cv2.imwrite('output.jpg',fimg2)
-fimg3 = img1 * img2
-plt.imshow(fimg3)
-plt.show()
-#saving
-cv2.imwrite('output.jpg',fimg3)
-fimg4 = img1 / img2
-plt.imshow(fimg4)
-plt.show()
-#saving
-cv2.imwrite('output.jpg',fimg4)
+#saving the output image<br>
+cv2.imwrite('output.jpg',fimg1)<br>
+fimg2 = img1 - img2<br>
+plt.imshow(fimg2)<br>
+plt.show()<br>
+#saving<br><br>
+cv2.imwrite('output.jpg',fimg2)<br>
+fimg3 = img1 * img2<br>
+plt.imshow(fimg3)<br>
+plt.show()<br>
+#saving<br>
+cv2.imwrite('output.jpg',fimg3)<br>
+fimg4 = img1 / img2<br>
+plt.imshow(fimg4)<br>
+plt.show()<br>
+#saving<br>
+cv2.imwrite('output.jpg',fimg4)<br>
 
 **OUTPUT**
 
@@ -275,20 +275,20 @@ True
 
 
 ****
-import cv2
-img=cv2.imread("dog.jpg")
-gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
-lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)
-hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)
-yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)
-cv2.imshow("GRAY image",gray)
-cv2.imshow("HSV image",hsv)
-cv2.imshow("LAB image",lab)
-cv2.imshow("HLS image",hls)
-cv2.imshow("YUV image",yuv)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+import cv2<br>
+img=cv2.imread("dog.jpg")<br>
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br>
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)<br>
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)<br>
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)<br>
+cv2.imshow("GRAY image",gray)<br>
+cv2.imshow("HSV image",hsv)<br>
+cv2.imshow("LAB image",lab)<br>
+cv2.imshow("HLS image",hls)<br>
+cv2.imshow("YUV image",yuv)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br><br>
 
 **OUTPUT**
 
@@ -305,16 +305,16 @@ cv2.destroyAllWindows()
 
 
 **Program to create an image using**
-import cv2 as c
-import numpy as np
-from PIL import Image
-array=np.zeros([100,200,3],dtype=np.uint8)
-array[:,:100]=[255,130,0]
-array[:,100:]=[0,0,255]
-img=Image.fromarray(array)
-img.save('IMAGES.jpg')
-img.show()
-c.waitKey(0)
+import cv2 as c<br>
+import numpy as np<br>
+from PIL import Image<br>
+array=np.zeros([100,200,3],dtype=np.uint8)<br>
+array[:,:100]=[255,130,0]<br>
+array[:,100:]=[0,0,255]<br>
+img=Image.fromarray(array)<br>
+img.save('IMAGES.jpg')<br>
+img.show()<br>
+c.waitKey(0)<br><br>
 
 **output**
 
