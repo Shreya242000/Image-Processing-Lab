@@ -196,7 +196,6 @@ plt.show()
 
 ![image](https://user-images.githubusercontent.com/97940851/175256433-cd6a66bd-0eec-42ed-9281-3a002ad19731.png)
 
-![image](https://user-images.githubusercontent.com/97940851/175256481-517a1301-33e5-4d18-a0d2-fc9080e301ec.png)
 
 light_white=(0,0,200)
 dark_white=(145,60,255)
@@ -210,8 +209,6 @@ plt.show()
 
 ![image](https://user-images.githubusercontent.com/97940851/175256779-ede4be6e-d028-445b-8ec0-b748f1f9fe41.png)
 
-![image](https://user-images.githubusercontent.com/97940851/175256816-435ee2c3-c874-4b32-b32a-9f90cec64c66.png)
-
 
 final_mask=mask+mask_white
 final_result=cv2.bitwise_and(img,img,mask=final_mask)
@@ -223,7 +220,6 @@ plt.show()
 
 ![image](https://user-images.githubusercontent.com/97940851/175256930-9ae771e4-4cb7-43ca-bf39-68b2dbc07361.png)
 
-![image](https://user-images.githubusercontent.com/97940851/175256999-94769926-769a-40ba-b70a-7dd60f189d32.png)
 
 blur=cv2.GaussianBlur(final_result,(7,7),0)
 plt.imshow(blur)
