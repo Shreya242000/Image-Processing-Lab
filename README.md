@@ -228,6 +228,45 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940851/175257079-4bb9e433-07be-4e17-a7df-43fbac0010f6.png)
 
 
+**Write a program to perform airthmetic operation on image**
+
+import cv2
+import matplotlib.image as mping
+import matplotlib.pyplot as plt
+
+#Read image file
+img1=cv2.imread('image1.jpg')
+img2=cv2.imread('image2.jpg')
+
+#numpy addition on image
+fimg1 = img1 + img2
+plt.imshow(fimg1)
+plt.show()
+
+#saving the output image
+cv2.imwrite('output.jpg',fimg1)
+fimg2 = img1 - img2
+plt.imshow(fimg2)
+plt.show()
+#saving
+cv2.imwrite('output.jpg',fimg2)
+fimg3 = img1 * img2
+plt.imshow(fimg3)
+plt.show()
+#saving
+cv2.imwrite('output.jpg',fimg3)
+fimg4 = img1 / img2
+plt.imshow(fimg4)
+plt.show()
+#saving
+cv2.imwrite('output.jpg',fimg4)
+
+**OUTPUT**
+
+![image](https://user-images.githubusercontent.com/97940851/175271361-f69fd056-0c9f-48de-9f0e-58f179e3165a.png)
+
+
+
 
 
 
