@@ -173,4 +173,68 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940851/175006849-d1fe66de-25aa-4979-bc09-6ec770b11e3f.png)
 
 
+**Write aprogram to mask and blur the image**
+import cv2
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
+img=cv2.imread('fish.jpg')
+plt.imshow(img)
+plt.show()
+
+![image](https://user-images.githubusercontent.com/97940851/175256088-534b41d1-7204-4e74-8ffa-b2e07fd3a6a3.png)
+
+hsv_img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+light_orange=(1,190,200)
+dark_orange=(18,255,255)
+mask=cv2.inRange(img,light_orange,dark_orange)
+result=cv2.bitwise_and(img,img,mask=mask)
+plt.subplot(1,2,1)
+plt.imshow(mask,cmap="gray")
+plt.subplot(1,2,2)
+plt.imshow(result)
+plt.show()
+
+![image](https://user-images.githubusercontent.com/97940851/175256433-cd6a66bd-0eec-42ed-9281-3a002ad19731.png)
+
+![image](https://user-images.githubusercontent.com/97940851/175256481-517a1301-33e5-4d18-a0d2-fc9080e301ec.png)
+
+light_white=(0,0,200)
+dark_white=(145,60,255)
+mask_white=cv2.inRange(hsv_img,light_white,dark_white)
+result_white=cv2.bitwise_and(img,img,mask=mask_white)
+plt.subplot(1,2,1)
+plt.imshow(mask_white,cmap="gray")
+plt.subplot(1,2,2)
+plt.imshow(result_white)
+plt.show()
+
+![image](https://user-images.githubusercontent.com/97940851/175256779-ede4be6e-d028-445b-8ec0-b748f1f9fe41.png)
+
+![image](https://user-images.githubusercontent.com/97940851/175256816-435ee2c3-c874-4b32-b32a-9f90cec64c66.png)
+
+
+final_mask=mask+mask_white
+final_result=cv2.bitwise_and(img,img,mask=final_mask)
+plt.subplot(1,2,1)
+plt.imshow(final_mask,cmap="gray")
+plt.subplot(1,2,2)
+plt.imshow(final_result)
+plt.show()
+
+![image](https://user-images.githubusercontent.com/97940851/175256930-9ae771e4-4cb7-43ca-bf39-68b2dbc07361.png)
+
+![image](https://user-images.githubusercontent.com/97940851/175256999-94769926-769a-40ba-b70a-7dd60f189d32.png)
+
+blur=cv2.GaussianBlur(final_result,(7,7),0)
+plt.imshow(blur)
+plt.show()
+
+![image](https://user-images.githubusercontent.com/97940851/175257079-4bb9e433-07be-4e17-a7df-43fbac0010f6.png)
+
+
+
+
+
+
+
 
