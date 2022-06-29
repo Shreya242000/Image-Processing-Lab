@@ -383,6 +383,44 @@ cv2.destroyAllWindows()<br>
 
 
 
+**Image Enhancement**
+
+from PIL import Image<br>
+from PIL import ImageEnhance<br>
+image=Image.open('lotus.jpg')<br>
+image.show()<br>
+enh_bri=ImageEnhance.Brightness(image)<br>
+brightness=1.5<br>
+image_brightened=enh_bri.enhance(brightness)<br>
+image_brightened.show()<br>
+enh_col=ImageEnhance.Color(image)<br>
+color=1.5<br>
+image_colored=enh_col.enhance(color)<br>
+image_colored.show()<br>
+enh_con=ImageEnhance.Contrast(image)<br>
+contrast=1.5<br>
+image_contrasted=enh_con.enhance(contrast)<br>
+image_contrasted.show()<br>
+enh_sha=ImageEnhance.Sharpness(image)<br>
+sharpness=3.0<br>
+image_sharped=enh_sha.enhance(sharpness)<br>
+image_sharped.show()<br>
+
+**OUTPUT**
+
+![image](https://user-images.githubusercontent.com/97940851/176418038-15ffb777-77a4-4655-9777-fa2de9d0da32.png)
+
+![image](https://user-images.githubusercontent.com/97940851/176418104-374c887d-050d-45a6-92c1-1341de02ba3f.png)
+
+![image](https://user-images.githubusercontent.com/97940851/176418174-de365094-1245-430f-8e52-0794dc9f70d5.png)
+
+![image](https://user-images.githubusercontent.com/97940851/176418294-f6ba9fe4-8f7e-449e-bb45-c25657b2f1d7.png)
+
+![image](https://user-images.githubusercontent.com/97940851/176418351-7d56cbee-457d-4183-8470-8c1325c98cde.png)
+
+
+
+
 
 
 
