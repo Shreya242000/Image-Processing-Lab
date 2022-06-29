@@ -322,29 +322,30 @@ c.waitKey(0)<br><br>
 
 
 **Bitwise Operator**
-import cv2
-import matplotlib.pyplot as plt
-image1=cv2.imread('images1.jpg',1)
-image2=cv2.imread('images1.jpg')
-ax=plt.subplots(figsize=(15,10))
-bitwiseAnd=cv2.bitwise_and(image1,image2)
-bitwiseOr=cv2.bitwise_or(image1,image2)
-bitwiseXor=cv2.bitwise_xor(image1,image2)
-bitwiseNot_img1=cv2.bitwise_not(image1)
-bitwiseNot_img2=cv2.bitwise_not(image2)
-plt.subplot(151)
-plt.imshow(bitwiseAnd)
-plt.subplot(152)
-plt.imshow(bitwiseOr)
-plt.subplot(153)
-plt.imshow(bitwiseXor)
-plt.subplot(154)
-plt.imshow(bitwiseNot_img1)
-plt.subplot(155)
-plt.imshow(bitwiseNot_img2)
-cv2.waitKey(0)
+import cv2<br>
+import matplotlib.pyplot as plt<br>
+image1=cv2.imread('images1.jpg',1)<br>
+image2=cv2.imread('images1.jpg')<br>
+ax=plt.subplots(figsize=(15,10))<br>
+bitwiseAnd=cv2.bitwise_and(image1,image2)<br>
+bitwiseOr=cv2.bitwise_or(image1,image2)<br>
+bitwiseXor=cv2.bitwise_xor(image1,image2)<br>
+bitwiseNot_img1=cv2.bitwise_not(image1)<br>
+bitwiseNot_img2=cv2.bitwise_not(image2)<br>
+plt.subplot(151)<br>
+plt.imshow(bitwiseAnd)<br>
+plt.subplot(152)<br>
+plt.imshow(bitwiseOr)<br>
+plt.subplot(153)<br>
+plt.imshow(bitwiseXor)<br>
+plt.subplot(154)<br>
+plt.imshow(bitwiseNot_img1)<br>
+plt.subplot(155)<br>
+plt.imshow(bitwiseNot_img2<br>
+cv2.waitKey(0)<br>
 
 **OUTPUT**
+
 ![image](https://user-images.githubusercontent.com/97940851/176408534-33a0ecb4-97a0-4532-bf63-8a862d95fc5f.png)
 
 
