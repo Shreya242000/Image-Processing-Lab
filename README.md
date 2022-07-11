@@ -1,7 +1,7 @@
 # Image-Processing-Lab
 
 
-**1. Develop a program to display grayscale image using read and write operation.**
+**1. Develop a program to display grayscale image using read and write operation.**<br>
 import cv2<br><br>
 img=cv2.imread('rose1.jpg',0)<br>
 cv2.imshow('image',img)<br>
@@ -12,11 +12,7 @@ OUTPUT
 
 ![image](https://user-images.githubusercontent.com/97940851/174562233-db89101a-0ca1-462f-b481-ab615dd9b6d4.png)
 
-
-
-
-
-**2. Develop a program to display the image using matplotlib.**
+**2. Develop a program to display the image using matplotlib.**<br>
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
 img=mping.imread('leaf1.jpg')<br>
@@ -28,7 +24,7 @@ OUTPUT
 
 
 
-**3. develop a program to perform linear transformation. Rotation**
+**3. develop a program to perform linear transformation. Rotation**<br>
 import cv2<br><br>
 from PIL import Image<br><br>
 img=Image.open('plant4.jpg')<br><br>
@@ -43,7 +39,7 @@ OUTPUT
 
 
 
-**4. Develop a program to convert colour string to RGB color values.**
+**4. Develop a program to convert colour string to RGB color values.**<br>
 from PIL import ImageColor<br>
 img1=ImageColor.getrgb("Yellow")<br>
 print(img1)<br>
@@ -55,7 +51,7 @@ OUTPUT
 (255, 255, 0)
 (255, 0, 0)
 
-**5. Write a program to create Image using programs.**
+**5. Write a program to create Image using programs.**<br>
 from PIL import Image<br>
 img=Image.new('RGB',(200,400),(255,255,0))<br>
 img.show()<br>
@@ -65,7 +61,7 @@ OUTPUT
 ![image](https://user-images.githubusercontent.com/97940851/174564403-b6637935-61ef-4122-9835-0bf8cf68bfbe.png)
 
 
-**6. Develop a program to visualize the image using various color space.**
+**6. Develop a program to visualize the image using various color space.**<br>
 import cv2<br>
 import matplotlib.pyplot as plt<br>
 import numpy as np<br>
@@ -89,7 +85,7 @@ OUTPUT
 ![image](https://user-images.githubusercontent.com/97940851/174563481-46011097-6156-4bdd-af27-fc23ff5a4c0f.png)
 
 
-**7. Write a program to display the image attributes.**
+**7. Write a program to display the image attributes.**<br>
 from PIL import Image<br>
 image=Image.open('plant4.jpg')<br>
 print("FileName: ",image.filename)<br>
@@ -100,7 +96,7 @@ print("Width: ",image.width)<br>
 print("Height: ",image.height)<br>
 image.close();<br>
 
-OUTPUT
+**OUTPUT**
 
 FileName: plant4.jpg<br>
 Format: JPEG
@@ -110,7 +106,7 @@ Width: 480
 Height: 720
 
 
-**8.Resize the original image**
+**8.Resize the original image**<br>
 import cv2<br>
 img=cv2.imread('flower.jpg')<br>
 print('original image length width',img.shape)<br>
@@ -123,7 +119,7 @@ cv2.imshow('resized image',imgresize)<br>
 print('Resized image length width',imgresize.shape)<br>
 cv2.waitKey(0)<br>
 
-OUTPUT
+**OUTPUT**
 
 original image length width (181, 278, 3)
 Resized image length width (160, 150, 3)
@@ -133,7 +129,7 @@ Resized image length width (160, 150, 3)
 
 ![image](https://user-images.githubusercontent.com/97940851/174060142-c655e013-c599-4868-af67-9410b4bb8245.png)
 
-**9.Convert the original image to grayscale and then to binary**
+**9.Convert the original image to grayscale and then to binary**<br>
 import cv2<br>
 #read the image file<br>
 img=cv2.imread('flower.jpg')<br>
@@ -173,7 +169,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940851/175006849-d1fe66de-25aa-4979-bc09-6ec770b11e3f.png)
 
 
-**Write aprogram to mask and blur the image**
+**Write aprogram to mask and blur the image**<br>
 import cv2<br>
 import matplotlib.image as mpimg<br>
 import matplotlib.pyplot as plt<br>
@@ -271,7 +267,6 @@ cv2.imwrite('output.jpg',fimg4)<br>
 
 ![image](https://user-images.githubusercontent.com/97940851/175272011-17225891-481f-445d-b47e-1fb7804c5997.png)
 
-True
 
 
 ****
