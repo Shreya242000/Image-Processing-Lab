@@ -445,6 +445,27 @@ cv2.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940851/176424583-7f0129f9-fd1a-4e78-b3ef-7bdd20a7e17a.png)
 
 
+**Gray Scale**
+import cv2
+OriginalImg=cv2.imread('rose.jpg')
+GrayImg=cv2.imread('rose.jpg',0)
+isSaved=cv2.imwrite('D:\i.jpg',GrayImg)
+cv2.imshow('Display Original Image',OriginalImg)
+cv2.imshow('Display Grayscale Image',GrayImg)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+if isSaved:
+    print('The image is successfully saved.')
+    
+    
+ **OUTPUT**
+ 
+ ![image](https://user-images.githubusercontent.com/97940851/178697677-e6140969-1eef-4c1e-8275-24c56769f317.png)
+
+ ![image](https://user-images.githubusercontent.com/97940851/178697495-bb729e04-5414-4beb-b290-df466f921022.png)
+
+
+
 
 
 
