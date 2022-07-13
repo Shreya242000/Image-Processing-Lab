@@ -470,7 +470,7 @@ if isSaved:<br>
 import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
-image=cv2.imread('rose1.jpg',0)<br>
+image=cv2.imread('lotus.jpg',0)<br>
 x,y=image.shape<br>
 z=np.zeros((x,y))<br>
 for i in range(0,x):<br>
@@ -486,7 +486,8 @@ plt.show()<br>
 
 **OUTPUT**
 
-![image](https://user-images.githubusercontent.com/97940851/178701903-6895668e-9c09-4b15-b08d-2dab6c45da19.png)
+![image](https://user-images.githubusercontent.com/97940851/178703617-9ff09f52-ae4a-4f04-b22b-954c1eae65d4.png)
+
 
 
 
