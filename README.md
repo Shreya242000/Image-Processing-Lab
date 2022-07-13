@@ -465,13 +465,28 @@ if isSaved:
  ![image](https://user-images.githubusercontent.com/97940851/178697495-bb729e04-5414-4beb-b290-df466f921022.png)
 
 
+**Graylevel sclicing with background**
 
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+image=cv2.imread('rose1.jpg',0)
+x,y=image.shape
+z=np.zeros((x,y))
+for i in range(0,x):
+    for j in range(0,y):
+        if(image[i][j]>50 and image[i][j]<150):
+            z[i][j]=255
+        else:
+                z[i][j]=image[i][j]
+equ=np.hstack((image,z))
+plt.title('Graylevel slicing with background')
+plt.imshow(equ,'gray')
+plt.show()
 
+**OUTPUT**
 
-
-
-
-
+![image](https://user-images.githubusercontent.com/97940851/178701903-6895668e-9c09-4b15-b08d-2dab6c45da19.png)
 
 
 
