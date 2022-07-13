@@ -445,48 +445,73 @@ cv2.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940851/176424583-7f0129f9-fd1a-4e78-b3ef-7bdd20a7e17a.png)
 
 
-**Gray Scale**
-import cv2
-OriginalImg=cv2.imread('rose.jpg')
-GrayImg=cv2.imread('rose.jpg',0)
-isSaved=cv2.imwrite('D:\i.jpg',GrayImg)
-cv2.imshow('Display Original Image',OriginalImg)
-cv2.imshow('Display Grayscale Image',GrayImg)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-if isSaved:
-    print('The image is successfully saved.')
+**Gray Scale**<br>
+import cv2<br>
+OriginalImg=cv2.imread('rose.jpg')<br>
+GrayImg=cv2.imread('rose.jpg',0)<br>
+isSaved=cv2.imwrite('D:\i.jpg',GrayImg)<br>
+cv2.imshow('Display Original Image',OriginalImg)<br>
+cv2.imshow('Display Grayscale Image',GrayImg)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+if isSaved:<br>
+    print('The image is successfully saved.')<br>
     
     
  **OUTPUT**
  
- ![image](https://user-images.githubusercontent.com/97940851/178697677-e6140969-1eef-4c1e-8275-24c56769f317.png)
+ ![image](https://user-images.githubusercontent.com/97940851/178697677-e6140969-1eef-4c1e-8275-24c56769f317.png)<br>
 
  ![image](https://user-images.githubusercontent.com/97940851/178697495-bb729e04-5414-4beb-b290-df466f921022.png)
 
 
-**Graylevel sclicing with background**
+**Graylevel sclicing with background**<br>
 
-import cv2
-import numpy as np
-from matplotlib import pyplot as plt
-image=cv2.imread('rose1.jpg',0)
-x,y=image.shape
-z=np.zeros((x,y))
-for i in range(0,x):
-    for j in range(0,y):
-        if(image[i][j]>50 and image[i][j]<150):
-            z[i][j]=255
-        else:
-                z[i][j]=image[i][j]
-equ=np.hstack((image,z))
-plt.title('Graylevel slicing with background')
-plt.imshow(equ,'gray')
-plt.show()
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('rose1.jpg',0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in range(0,y):<br>
+        if(image[i][j]>50 and image[i][j]<150):<br>
+            z[i][j]=255<br>
+        else:<br>
+                z[i][j]=image[i][j]<br>
+equ=np.hstack((image,z))<br>
+plt.title('Graylevel slicing with background')<br>
+plt.imshow(equ,'gray')<br>
+plt.show()<br>
 
 **OUTPUT**
 
 ![image](https://user-images.githubusercontent.com/97940851/178701903-6895668e-9c09-4b15-b08d-2dab6c45da19.png)
+
+
+
+**Graylevel slicing without background**<br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('lotus.jpg',0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in range(0,y):<br>
+        if(image[i][j]>50 and image[i][j]<150):<br>
+            z[i][j]=255<br>
+        else:<br>
+                z[i][j]=0<br>
+equ=np.hstack((image,z))<br>
+plt.title('Graylevel slicing with background')<br>
+plt.imshow(equ,'gray')<br>
+plt.show()<br>
+
+**OUTPUT**
+
+![image](https://user-images.githubusercontent.com/97940851/178702820-5a431c4b-4224-49b4-b441-ff0ef0162668.png)
+<br>
 
 
 
