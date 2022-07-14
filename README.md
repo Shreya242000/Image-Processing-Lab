@@ -515,6 +515,47 @@ plt.show()<br>
 <br>
 
 
+**Histogram**
+
+import numpy as np<br>
+import skimage.color<br>
+import skimage.io<br>
+import matplotlib.pyplot as plt<br>
+#matplotlib widget<br>
+
+/read the image of a plant seedling as grayscale from the outset/<br>
+image = skimage.io.imread(fname="rose.jpg", as_gray=True)<br>
+image1 = skimage.io.imread(fname="rose.jpg")<br>
+/display the image/<br>
+fig, ax = plt.subplots()<br>
+plt.imshow(image, cmap="gray")<br>
+plt.show()<br>
+
+fig, ax = plt.subplots()<br>
+plt.imshow(image1, cmap="gray")<br>
+plt.show()<br>
+
+
+/create the histogram/<br>
+histogram, bin_edges = np.histogram(image, bins=256, range=(0, 1))<br>
+
+/configure and draw the histogram figure/<br>
+plt.figure()<br>
+plt.title("Grayscale Histogram")<br>
+plt.xlabel("grayscale value")<br>
+plt.ylabel("pixel count")<br>
+plt.xlim([0.0, 1.0])  /<- named arguments do not work here/<br>
+
+plt.plot(bin_edges[0:-1], histogram)   /<- or here/<br>
+plt.show()<br>
+
+**OUTPUT**
+<br>
+![image](https://user-images.githubusercontent.com/97940851/178964241-da19198d-d938-49a6-a654-26f54641c6d4.png)
+
+
+
+
 
 
 
