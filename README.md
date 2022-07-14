@@ -553,6 +553,11 @@ plt.show()<br>
 <br>
 ![image](https://user-images.githubusercontent.com/97940851/178964241-da19198d-d938-49a6-a654-26f54641c6d4.png)
 
+![image](https://user-images.githubusercontent.com/97940851/178964512-84b945d8-3dd4-4fa8-8e1e-de3aca04953c.png)
+
+![image](https://user-images.githubusercontent.com/97940851/178964546-dd08d960-e1ca-4fa4-b2e9-d4bcf43b620b.png)
+
+
 
 
 
