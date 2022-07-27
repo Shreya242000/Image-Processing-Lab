@@ -795,45 +795,45 @@ plt.show()<br>
 
 
 
-# Python3 program for printing
-# the rectangular pattern
+**Python3 program for printing**<br>
+**the rectangular pattern**<br>
  
-# Function to print the pattern
-def printPattern(n):
+** Function to print the pattern<br>
+def printPattern(n):<br>
  
-    arraySize = n * 2 - 1;
-    result = [[0 for x in range(arraySize)]
-                 for y in range(arraySize)];
+    arraySize = n * 2 - 1;<br>
+    result = [[0 for x in range(arraySize)]<br>
+                 for y in range(arraySize)];<br>
          
-    # Fill the values
-    for i in range(arraySize):
-        for j in range(arraySize):
-            if(abs(i - (arraySize // 2)) >
-               abs(j - (arraySize // 2))):
-                result[i][j] = abs(i - (arraySize // 2));
-            else:
-                result[i][j] = abs(j - (arraySize // 2));
+    # Fill the values<br>
+    for i in range(arraySize):<br>
+        for j in range(arraySize):<br>
+            if(abs(i - (arraySize // 2)) ><br>
+               abs(j - (arraySize // 2))):<br>
+                result[i][j] = abs(i - (arraySize // 2));<br>
+            else:<br>
+                result[i][j] = abs(j - (arraySize // 2));<br>
              
-    # Print the array
-    for i in range(arraySize):
-        for j in range(arraySize):
-            print(result[i][j], end = " ");
-        print("");
+    ** Print the array<br>
+    for i in range(arraySize):<br>
+        for j in range(arraySize):<br>
+            print(result[i][j], end = " ");<br>
+        print("");<br>
  
-# Driver Code
-n = 4;
+**Driver Code<br>
+n = 4;<br>
  
-printPattern(n);
+printPattern(n);<br>
 
 
 **OUTPUT**
-3 3 3 3 3 3 3 
-3 2 2 2 2 2 3 
-3 2 1 1 1 2 3 
-3 2 1 0 1 2 3 
-3 2 1 1 1 2 3 
-3 2 2 2 2 2 3 
-3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 <br>
+3 2 2 2 2 2 3 <br>
+3 2 1 1 1 2 3 <br>
+3 2 1 0 1 2 3 <br>
+3 2 1 1 1 2 3 <br>
+3 2 2 2 2 2 3 <br>
+3 3 3 3 3 3 3 <br>
 
 
 
