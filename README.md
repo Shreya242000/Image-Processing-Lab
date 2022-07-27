@@ -752,42 +752,42 @@ plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97940851/181227591-0c42242c-3c0b-4b66-b3e7-e374db107217.png)
 
-import numpy as np
-import matplotlib.pyplot as plt
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
 
-imgsize=(650,650)
-image = Image.new('RGB', imgsize)
-innerColor = [153,0,0]
-for y in range(imgsize[1]):
-    for x in range(imgsize[0]):
-        distanceToCenter =np.sqrt((x - imgsize[0]/2) ** 2 + (y - imgsize[1]/2) ** 2)
-        distanceToCenter = (distanceToCenter) / (np.sqrt(2) * imgsize[0]/2)
-        r = distanceToCenter + innerColor[0] * (1 - distanceToCenter)
-        g = distanceToCenter + innerColor[1] * (1 - distanceToCenter)
-        b = distanceToCenter + innerColor[2] * (1 - distanceToCenter)
-        image.putpixel((x, y), (int(r), int(g), int(b)))
-plt.imshow(image)
-plt.show()
+imgsize=(650,650)<br>
+image = Image.new('RGB', imgsize)<br>
+innerColor = [153,0,0]<br>
+for y in range(imgsize[1]):<br>
+    for x in range(imgsize[0]):<br>
+        distanceToCenter =np.sqrt((x - imgsize[0]/2) ** 2 + (y - imgsize[1]/2) ** 2)<br>
+        distanceToCenter = (distanceToCenter) / (np.sqrt(2) * imgsize[0]/2)<br>
+        r = distanceToCenter + innerColor[0] * (1 - distanceToCenter)<br>
+        g = distanceToCenter + innerColor[1] * (1 - distanceToCenter)<br>
+        b = distanceToCenter + innerColor[2] * (1 - distanceToCenter)<br>
+        image.putpixel((x, y), (int(r), int(g), int(b)))<br>
+plt.imshow(image)<br>
+plt.show()<br>
 
-**OUTPUT**
+**OUTPUT**<br>
 
 ![image](https://user-images.githubusercontent.com/97940851/181227742-8f0715d7-c0b7-46bd-bef8-29c13dec238b.png)
 
 
-from PIL import Image
-import numpy as np
-import matplotlib.pyplot as plt
-w, h = 512, 512
-data = np.zeros((h, w, 3), dtype=np.uint8)
-data[0:100, 0:100] = [255, 0, 0]
-data[100:200, 100:200] = [255, 0, 255]
-data[200:300, 200:300] = [0, 255, 0]
-data[300:400, 300:400] = [255, 255, 0]
-data[400:500, 400:500] = [0, 255, 255]
-img = Image.fromarray(data, 'RGB')
-img.save('my.png')
-plt.imshow(img)
-plt.show()
+from PIL import Image<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+w, h = 512, 512<br>
+data = np.zeros((h, w, 3), dtype=np.uint8)<br>
+data[0:100, 0:100] = [255, 0, 0]<br>
+data[100:200, 100:200] = [255, 0, 255]<br>
+data[200:300, 200:300] = [0, 255, 0]<br>
+data[300:400, 300:400] = [255, 255, 0]<br>
+data[400:500, 400:500] = [0, 255, 255]<br>
+img = Image.fromarray(data, 'RGB')<br>
+img.save('my.png')<br>
+plt.imshow(img)<br>
+plt.show()<br>
 
 **OUTPUT**
 
