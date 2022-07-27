@@ -271,7 +271,7 @@ cv2.imwrite('output.jpg',fimg4)<br>
 
 ****
 import cv2<br>
-img=cv2.imread("dog.jpg")<br>
+img=cv2.imread("cherry_blossom.jpg")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
 hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br>
 lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)<br>
