@@ -287,15 +287,15 @@ cv2.destroyAllWindows()<br><br>
 
 **OUTPUT**
 
-![image](https://user-images.githubusercontent.com/97940851/175275459-1038aabc-f2e2-48d4-832e-4818794576d7.png)
+![image](https://user-images.githubusercontent.com/97940851/181215334-ba98a44f-7fa2-46e2-a042-3536d44410ab.png)
 
-![image](https://user-images.githubusercontent.com/97940851/175275565-e98518fb-4310-4ae7-9121-312f769a1789.png)
+![image](https://user-images.githubusercontent.com/97940851/181215464-dac32692-a0ba-45e8-b24f-da2ae401417a.png)
 
-![image](https://user-images.githubusercontent.com/97940851/175275777-13baace2-7b44-40e2-8fca-601994e1dd4f.png)
+![image](https://user-images.githubusercontent.com/97940851/181215563-be6da498-cd54-4d3e-8930-ead9f191cee3.png)
 
-![image](https://user-images.githubusercontent.com/97940851/175275902-3fdd3a34-d608-4f77-85c8-f3164238cb19.png)
+![image](https://user-images.githubusercontent.com/97940851/181215661-1d27e4fc-fc0a-4116-8345-4d06eb14e89d.png)
 
-![image](https://user-images.githubusercontent.com/97940851/175275976-0d96f5e4-beb2-4d92-b5b6-714205902ea2.png)
+![image](https://user-images.githubusercontent.com/97940851/181215798-8cd266d4-4f65-4bf7-a1d8-58a8449fcb0c.png)
 
 
 
