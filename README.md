@@ -826,7 +826,7 @@ n = 4;<br>
 printPattern(n);<br>
 
 
-**OUTPUT**
+**OUTPUT**<br>
 3 3 3 3 3 3 3 <br>
 3 2 2 2 2 2 3 <br>
 3 2 1 1 1 2 3 <br>
