@@ -858,10 +858,69 @@ pixels /= 255.0<br>
 🤍confirm the normalization🤍<br>
 print('Min: %.3f, Max: %.3f' % (pixels.min(), pixels.max()))<br>
 
-**OUTPUT**
+**OUTPUT**<br>
 
-Min: 0.000, Max: 255.000
-Min: 0.000, Max: 1.000
+Min: 0.000, Max: 255.000<br>
+Min: 0.000, Max: 1.000<br>
+
+
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+array_colors = np.array([[[245, 20, 36],<br>
+[10, 215, 30],<br>
+[40, 50, 205]],<br>
+[[70, 50, 10],<br>
+[25, 230, 85],<br>
+[12, 128, 128]],<br>
+[[25, 212, 3],<br>
+[55, 5, 250],<br>
+[240, 152, 25]],<br>
+])<br>
+plt.imshow(array_colors)<br>
+np.max(array_colors)<br>
+
+**OUTPUT**<br>
+
+![image](https://user-images.githubusercontent.com/97940851/183872180-e890f176-7e50-46e2-a933-f68336713dac.png)<br>
+
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+array_colors = np.array([[[245, 20, 36],<br>
+[10, 215, 30],<br>
+[40, 50, 205]],<br>
+[[70, 50, 10],<br>
+[25, 230, 85],<br>
+[12, 128, 128]],<br>
+[[25, 212, 3],
+[55, 5, 250],<br>
+[240, 152, 25]],<br>
+])<br>
+plt.imshow(array_colors)<br>
+np.min(array_colors)<br>
+
+**OUTPUT**<br>
+
+![image](https://user-images.githubusercontent.com/97940851/183872323-bb33676c-32b9-4d41-b8df-81ebf46578ce.png)<br>
+
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+array_colors = np.array([[[245, 20, 36],<br>
+[10, 215, 30],<br>
+[40, 50, 205]],<br>
+[[70, 50, 10],<br>
+[25, 230, 85],<br>
+[12, 128, 128]],<br>
+[[25, 212, 3],<br>
+[55, 5, 250],<br>
+[240, 152, 25]],<br>
+])<br>
+plt.imshow(array_colors)<br>
+np.std(array_colors)<br>
+
+**OUTPUT**<br>
+
+![image](https://user-images.githubusercontent.com/97940851/183872471-11aed4df-02ca-4c36-b25d-d486d2af3529.png)<br>
+
 
 
 
