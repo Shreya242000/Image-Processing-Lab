@@ -633,7 +633,7 @@ plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97940851/179961104-47c651e3-6fed-4daa-b7f5-35212d2a2932.png)<br>
 
-#Image flip<br>
+#Image flip#<br>
 import matplotlib.pyplot as plt<br>
 #load the image<br>
 img=Image.open('tiger.jpg')<br>
@@ -671,7 +671,7 @@ plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97940851/179961513-06dbf514-5ad2-4a28-8b61-7647ed784f06.png)<br>
 
-
+**Matrix**
 from PIL import Image<br>
 from numpy import asarray<br>
 img = Image.open('cb1.jpg')<br>
@@ -730,7 +730,7 @@ print(numpydata)<br>
   [  0  20  53]
   [  0  20  53]]]
   
-  
+  **Matrix**
   import numpy as np<br>
 import matplotlib.pyplot as plt<br>
 arr = np.zeros((256,256,3), dtype=np.uint8)<br>
