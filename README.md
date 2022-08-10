@@ -836,21 +836,21 @@ printPattern(n);<br>
 3 3 3 3 3 3 3 <br>
 
 
-**example of pixel normalization**
-from numpy import asarray
-from PIL import Image
- 💎load image💎
-image = Image.open('img2.jpg')
-pixels = asarray(image)
-💎confirm pixel range is 0-255
-print('Data Type: %s' % pixels.dtype)💎
-print('Min: %.3f, Max: %.3f' % (pixels.min(), pixels.max()))
-💎convert from integers to floats💎
-pixels = pixels.astype('float32')
-💎normalize to the range 0-1💎
-pixels /= 255.0
-💎 confirm the normalization💎
-print('Min: %.3f, Max: %.3f' % (pixels.min(), pixels.max()))
+**example of pixel normalization**<br>
+from numpy import asarray<br>
+from PIL import Image<br>
+ 💎load image💎<br>
+image = Image.open('img2.jpg')<br>
+pixels = asarray(image)<br>
+💎confirm pixel range is 0-255<br>
+print('Data Type: %s' % pixels.dtype)💎<br>
+print('Min: %.3f, Max: %.3f' % (pixels.min(), pixels.max()))<br>
+💎convert from integers to floats💎<br>
+pixels = pixels.astype('float32')<br>
+💎normalize to the range 0-1💎<br>
+pixels /= 255.0<br>
+💎 confirm the normalization💎<br>
+print('Min: %.3f, Max: %.3f' % (pixels.min(), pixels.max()))<br>
 
 
 
