@@ -156,7 +156,7 @@ OUTPUT
 ![image](https://user-images.githubusercontent.com/97940851/174060627-e4f005d9-04d5-4b41-9c88-52ddbf7d0138.png)
 
 
-**url**<br>
+**10.url**<br>
 from skimage import io<br>
 import matplotlib.pyplot as plt<br>
 url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3VyCF39_x0MhTZema9w9qnFPw6SgAAnY0lA&usqp=CAU'<br>
@@ -169,7 +169,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940851/175006849-d1fe66de-25aa-4979-bc09-6ec770b11e3f.png)
 
 
-**Write aprogram to mask and blur the image**<br>
+**12.Write aprogram to mask and blur the image**<br>
 import cv2<br>
 import matplotlib.image as mpimg<br>
 import matplotlib.pyplot as plt<br>
@@ -224,7 +224,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940851/175257079-4bb9e433-07be-4e17-a7df-43fbac0010f6.png)
 
 
-**Write a program to perform airthmetic operation on image**
+**13.Write a program to perform airthmetic operation on image**
 
 import cv2<br>
 import matplotlib.image as mping<br>
@@ -269,7 +269,7 @@ cv2.imwrite('output.jpg',fimg4)<br>
 
 
 
-****
+**14.Deevelop a program to visualize the image using various color spaces**
 import cv2<br>
 img=cv2.imread("cherry_blossom.jpg")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
@@ -299,7 +299,7 @@ cv2.destroyAllWindows()<br><br>
 
 
 
-**Program to create an image using**
+**15.Program to create an image using**
 import cv2 as c<br>
 import numpy as np<br>
 from PIL import Image<br>
@@ -316,7 +316,7 @@ c.waitKey(0)<br><br>
 ![image](https://user-images.githubusercontent.com/97940851/175283707-b07903e6-eeae-4838-85e7-bd7f7177f98c.png)
 
 
-**Bitwise Operator**
+**17.Bitwise Operator**
 import cv2<br>
 import matplotlib.pyplot as plt<br>
 image1=cv2.imread('images1.jpg',1)<br>
@@ -344,7 +344,7 @@ cv2.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940851/176408534-33a0ecb4-97a0-4532-bf63-8a862d95fc5f.png)
 
 
-**Blurring Image**
+**18.Blurring Image**
 
 #importing libraries<br>
 import cv2<br>
@@ -378,7 +378,7 @@ cv2.destroyAllWindows()<br>
 
 
 
-**Image Enhancement**
+**19.Image Enhancement**
 
 from PIL import Image<br>
 from PIL import ImageEnhance<br>
@@ -414,7 +414,7 @@ image_sharped.show()<br>
 ![image](https://user-images.githubusercontent.com/97940851/176418351-7d56cbee-457d-4183-8470-8c1325c98cde.png)
 
 
-**Morphological Operation**
+**20.Morphological Operation**
 
 import cv2<br>
 import numpy as np<br>
@@ -445,7 +445,9 @@ cv2.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940851/176424583-7f0129f9-fd1a-4e78-b3ef-7bdd20a7e17a.png)
 
 
-**Gray Scale**<br>
+**21.Develop a program to 1.Read the image
+ 2.Write the Gray Scale image 
+ 3.Display the original image and gray scale image**<br>
 import cv2<br>
 OriginalImg=cv2.imread('rose.jpg')<br>
 GrayImg=cv2.imread('rose.jpg',0)<br>
@@ -465,7 +467,7 @@ if isSaved:<br>
  ![image](https://user-images.githubusercontent.com/97940851/178697495-bb729e04-5414-4beb-b290-df466f921022.png)
 
 
-**Graylevel sclicing with background**<br>
+**22.Graylevel sclicing with background**<br>
 
 import cv2<br>
 import numpy as np<br>
@@ -489,9 +491,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940851/178703617-9ff09f52-ae4a-4f04-b22b-954c1eae65d4.png)
 
 
-
-
-**Graylevel slicing without background**<br>
+**23.Graylevel slicing without background**<br>
 import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
@@ -515,7 +515,7 @@ plt.show()<br>
 <br>
 
 
-**Histogram**
+**24.Histogram**
 
 import numpy as np<br>
 import skimage.color<br>
@@ -558,7 +558,10 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940851/178964546-dd08d960-e1ca-4fa4-b2e9-d4bcf43b620b.png)
 
 
-**Image Negetive**<br>
+**25.Program to perform basic image data analysis using intensity transformation
+1.Image Negetive
+2.Long Transformation
+3.Gamma encoding**<br>
 
 #matplotlib inline<br>
 import imageio<br>
@@ -615,7 +618,10 @@ plt.axis('off');<br>
 
 
 
-**Image manipulation**<br>
+**26.Program to perform basic Image manipulation
+1.Sharpness
+2.Flipping 
+3.Cropping**<br>
 
 #Image sharpen<br>
 from PIL import Image<br>
@@ -671,7 +677,7 @@ plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97940851/179961513-06dbf514-5ad2-4a28-8b61-7647ed784f06.png)<br>
 
-**Matrix**
+**27.Matrix**
 from PIL import Image<br>
 from numpy import asarray<br>
 img = Image.open('cb1.jpg')<br>
@@ -730,7 +736,7 @@ print(numpydata)<br>
   [  0  20  53]
   [  0  20  53]]]
   
-  **Matrix**
+  **28.Matrix**
   import numpy as np<br>
 import matplotlib.pyplot as plt<br>
 arr = np.zeros((256,256,3), dtype=np.uint8)<br>
@@ -795,7 +801,7 @@ plt.show()<br>
 
 
 
-**Python3 program for printing**<br>
+**29.Python3 program for printing**<br>
 **the rectangular pattern**<br>
  
 🤍 Function to print the pattern🤍 <br>
@@ -836,21 +842,27 @@ printPattern(n);<br>
 3 3 3 3 3 3 3 <br>
 
 
-**example of pixel normalization**<br>
+**30.example of pixel normalization**<br>
 from numpy import asarray<br>
 from PIL import Image<br>
- 💎load image💎<br>
+🤍 load image🤍<br>
 image = Image.open('img2.jpg')<br>
 pixels = asarray(image)<br>
-💎confirm pixel range is 0-255<br>
-print('Data Type: %s' % pixels.dtype)💎<br>
+🤍confirm pixel range is 0-255<br>
+print('Data Type: %s' % pixels.dtype)🤍<br>
 print('Min: %.3f, Max: %.3f' % (pixels.min(), pixels.max()))<br>
-💎convert from integers to floats💎<br>
+🤍convert from integers to floats🤍<br>
 pixels = pixels.astype('float32')<br>
-💎normalize to the range 0-1💎<br>
+🤍normalize to the range 0-1🤍<br>
 pixels /= 255.0<br>
-💎 confirm the normalization💎<br>
+🤍confirm the normalization🤍<br>
 print('Min: %.3f, Max: %.3f' % (pixels.min(), pixels.max()))<br>
+
+**OUTPUT**
+
+Min: 0.000, Max: 255.000
+Min: 0.000, Max: 1.000
+
 
 
 
